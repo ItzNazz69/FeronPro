@@ -213,13 +213,13 @@
 			// Set the PDF file URL
 			let pdfUrl = "./XP105P.pdf"; // Change this to your actual PDF path
 		
-			// Create a temporary link element
+			// Create a temporary link
 			let a = document.createElement("a");
-			a.href = pdfUrl;
-			a.download = "technical-sheet.pdf"; // File name for download
-			document.body.appendChild(a);
-			a.click();
-			document.body.removeChild(a);
+    		a.href = pdfUrl;
+    		a.download = "XP105P-technical-sheet.pdf"; // Force download
+    		document.body.appendChild(a);
+    		a.click();
+    		document.body.removeChild(a);
 		});
 		</script>
 </body>
